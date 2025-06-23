@@ -27,3 +27,8 @@ jobs:
 
       - name: Lint with pylint
         run: pylint simple_math.py test_simple_math.py || true
+
+      - name: Lint with pylint
+        run: |
+          pip install pylint
+          pylint simple_math.py test_simple_math.py
